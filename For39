@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int a, b;
+    cout<<"Imput A";
+    cin>>a;
+    cout << "Imput B ";
+    cin >> b;
+ 
+    int i, n;
+    for (i = a; i <= b; ++i) {
+        for (n = 1; n <= i; ++n)
+            cout << i <<" ";
+    }
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int n;
+    cout<<"Imput n";
+    cin>>n;
+ 
+    int i, j;
+    float res = 0, ni;
+    for (i = 1; i <= n; ++i) {
+        ni = i;
+        for (j = 1; j <= n - i; ++j) ni *= i;
+        res += ni;
+    }
+    cout<<res;
+}
+    

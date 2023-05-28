@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n, k;
+    cout<<"Imput n";
+    cin>>n;
+ 
+    cout<<"Imput k";
+    cin>>k;
+ 
+    int i, i2;
+    float result = 0, nk;
+    for (i = 1; i <= n; ++i) {
+        nk = i;
+        for (i2 = 1; i2 <= k; ++i2) nk *= i;
+        result += nk;
+    }
+    cout<< result;
+}
